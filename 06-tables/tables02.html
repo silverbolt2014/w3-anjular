@@ -10,7 +10,7 @@
 	<div ng-app="myApp" ng-controller="repoCtrl">
 		<table>
 			<tr ng-repeat="x in repos">
-			<td>Repo {{ x.full_name }}</td>
+			<td>Repo {{ $index + ', ' + x.full_name }}</td>
 			<td> {{ x.owner.login }} </td>
 		</tr>
 
